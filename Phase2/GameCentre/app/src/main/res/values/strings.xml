@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">GameCentre</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_users">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_change_password">change password </string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="action_check_email">Check Available</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- Strings related to register -->
+    <string name="prompt_new_password">New password </string>
+    <!-- Strings related to starting -->
+    <string name="introduction">Welcome To Sliding Tiles \n A Puzzle Game where you must arrange
+        the numbers in the correct order. If you undo, you got a penalty of adding 2 extra steps.
+        The player who took lower steps has higher rank.</string>
+    <string name="new_game_play">New Game</string>
+    <string name="scoreboard">ScoreBoard</string>
+    <string name="load_game">Load saved Game</string>
+    <string name="resume">resume</string>
+    <string name="sliding_tiles">Sliding Tiles</string>
+    <!-- Strings related to complexity -->
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="undo">Undo</string>
+    <string name="flip_to_win">Flip To Win</string>
+    <string name="color_matching">Color Matching</string>
+    <string name="save_game">Save Game</string>
+    <!-- Strings related to color matching -->
+    <string name="red">RED</string>
+    <string name="yellow">YELLOW</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="gray">GRAY</string>
+
+
+</resources>

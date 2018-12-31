@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Users.RegistrationActivity"
+    android:background="@drawable/login">
+
+    <EditText
+        android:id="@+id/new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="9dp"
+        android:autofillHints="@string/prompt_users"
+        android:ems="10"
+        android:hint="@string/prompt_users"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/check_account_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="250dp"
+        android:autofillHints="@string/prompt_password"
+        android:ems="10"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_account_button" />
+
+    <Button
+        android:id="@+id/check_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/action_check_email"
+        app:layout_constraintBottom_toTopOf="@+id/new_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_account" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="146dp"
+        android:text="@string/action_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_password" />
+
+    <TextView
+        android:id="@+id/register_result"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="151dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_button" />
+
+    <TextView
+        android:id="@+id/account_exist"
+        android:layout_width="68dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="417dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/new_account"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

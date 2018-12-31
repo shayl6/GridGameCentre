@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Basic.SelectGameActivity"
+    android:background="@drawable/select_game">
+
+    <TextView
+        android:id="@+id/gameCentre"
+        android:layout_width="318dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="62dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/enter_sliding_button"
+        android:layout_width="178dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="130dp"
+        android:text="@string/sliding_tiles"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameCentre" />
+
+    <Button
+        android:id="@+id/enter_colorMatching_button"
+        android:layout_width="178dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/color_matching"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/enter_flipToTile_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_sliding_button" />
+
+    <Button
+        android:id="@+id/enter_flipToTile_button"
+        android:layout_width="181dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/flip_to_win"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

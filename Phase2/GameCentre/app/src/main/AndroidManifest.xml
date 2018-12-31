@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fall2018.csc2017.slidingtiles">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="Basic.StartingActivity" />
+        <activity android:name=".GameActivity" />
+        <activity android:name="Basic.ComplexityActivity" />
+        <activity android:name="Users.RegistrationActivity" />
+        <activity android:name="Scores.ScoreBoardActivity" />
+        <activity android:name="Users.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Basic.SelectGameActivity" />
+        <activity android:name="Users.ResetPasswordActivity" />
+        <activity android:name="ColorMatching.ColorMatchingGameActivity" />
+        <activity android:name="FlipToWin.FlipToWinGameActivity" />
+        <!--<activity android:name="FlipToWin.FlipToWinStartingActivity" />-->
+        <!--<activity android:name="FlipToWin.FlipToWinComplexityActivity" />-->
+        <!--<activity android:name="FlipToWin.FlipToWinScoreBoardActivity" />-->
+        <!--<activity android:name="ColorMatching.ColorMatchingScoreBoardActivity" />-->
+        <!--<activity android:name="ColorMatching.ColorMatchingComplexityActivity" />-->
+        <!--<activity android:name="ColorMatching.ColorMatchingStartActivity" />-->
+        <activity android:name="FlipToWin.FlipToTileViewScoreBoardActivity"></activity>
+    </application>
+
+</manifest>
